@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizNova | Knowledge Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- Header -->
+        <header class="quiz-header">
+            <div class="logo">Quiz<span>Nova</span></div>
+            <p>Test your knowledge. Challenge yourself.</p>
+        </header>
+
+
+        <!-- Start Screen -->
+        <section class="start-screen" id="start-screen">
+
+            <div class="start-icon">✦</div>
+
+            <h1>Ready for the Challenge?</h1>
+
+            <p>
+                Answer 20 questions and test how much you really know.
+            </p>
+
+            <div class="quiz-info">
+                <div>
+                    <strong>20</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>10</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <strong>100</strong>
+                    <span>Points</span>
+                </div>
+            </div>
+
+            <button type="button" id="start-btn" class="primary-btn">
+                Start Quiz <span>→</span>
+            </button>
+
+            <p class="start-note">Choose carefully. Your time starts when you begin.</p>
+
+        </section>
+
+
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quiz-section">
+
+            <!-- Timer -->
+            <div class="quiz-topbar">
+
+                <div>
+                    <span class="small-label">TIME REMAINING</span>
+                    <div class="timer" id="timer">10:00</div>
+                </div>
+
+                <div class="question-count">
+                    <span class="small-label">TOTAL QUESTIONS</span>
+                    <strong>20 Questions</strong>
+                </div>
+
+            </div>
+
+            <!-- Timer Progress -->
+            <div class="progress-track">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+
+            <form id="quiz-form">
+
+                <!-- Question 1 -->
+                <section class="question-card">
+                    <h3><span>01</span> Which planet is known as the Red Planet?</h3>
+
+                    <label><input type="radio" name="q1" value="Earth"> Earth</label>
+                    <label><input type="radio" name="q1" value="Mars"> Mars</label>
+                    <label><input type="radio" name="q1" value="Jupiter"> Jupiter</label>
+                    <label><input type="radio" name="q1" value="Venus"> Venus</label>
+                </section>
+
+
+                <!-- Question 2 -->
+                <section class="question-card">
+                    <h3><span>02</span> Who developed the theory of general relativity?</h3>
+
+                    <label><input type="radio" name="q2" value="Isaac Newton"> Isaac Newton</label>
+                    <label><input type="radio" name="q2" value="Albert Einstein"> Albert Einstein</label>
+                    <label><input type="radio" name="q2" value="Galileo Galilei"> Galileo Galilei</label>
+                    <label><input type="radio" name="q2" value="Nikola Tesla"> Nikola Tesla</label>
+                </section>
+
+
+                <!-- Question 3 -->
+                <section class="question-card">
+                    <h3><span>03</span> Which is the largest ocean in the world?</h3>
+
+                    <label><input type="radio" name="q3" value="Atlantic Ocean"> Atlantic Ocean</label>
+                    <label><input type="radio" name="q3" value="Indian Ocean"> Indian Ocean</label>
+                    <label><input type="radio" name="q3" value="Arctic Ocean"> Arctic Ocean</label>
+                    <label><input type="radio" name="q3" value="Pacific Ocean"> Pacific Ocean</label>
+                </section>
+
+
+                <!-- Question 4 -->
+                <section class="question-card">
+                    <h3><span>04</span> What is the chemical symbol for Gold?</h3>
+
+                    <label><input type="radio" name="q4" value="Silver"> Silver</label>
+                    <label><input type="radio" name="q4" value="Gold"> Gold</label>
+                    <label><input type="radio" name="q4" value="Copper"> Copper</label>
+                    <label><input type="radio" name="q4" value="Iron"> Iron</label>
+                </section>
+
+
+                <!-- Question 5 -->
+                <section class="question-card">
+                    <h3><span>05</span> What is the capital city of Australia?</h3>
+
+                    <label><input type="radio" name="q5" value="Sydney"> Sydney</label>
+                    <label><input type="radio" name="q5" value="Melbourne"> Melbourne</label>
+                    <label><input type="radio" name="q5" value="Canberra"> Canberra</label>
+                    <label><input type="radio" name="q5" value="Perth"> Perth</label>
+                </section>
+
+
+                <!-- Question 6 -->
+                <section class="question-card">
+                    <h3><span>06</span> Which gas do plants absorb from the atmosphere?</h3>
+
+                    <label><input type="radio" name="q6" value="Oxygen"> Oxygen</label>
+                    <label><input type="radio" name="q6" value="Nitrogen"> Nitrogen</label>
+                    <label><input type="radio" name="q6" value="Carbon dioxide"> Carbon dioxide</label>
+                    <label><input type="radio" name="q6" value="Hydrogen"> Hydrogen</label>
+                </section>
+
+
+                <!-- Question 7 -->
+                <section class="question-card">
+                    <h3><span>07</span> How many continents are there on Earth?</h3>
+
+                    <label><input type="radio" name="q7" value="Five"> Five</label>
+                    <label><input type="radio" name="q7" value="Six"> Six</label>
+                    <label><input type="radio" name="q7" value="Seven"> Seven</label>
+                    <label><input type="radio" name="q7" value="Eight"> Eight</label>
+                </section>
+
+
+                <!-- Question 8 -->
+                <section class="question-card">
+                    <h3><span>08</span> What is the largest mammal in the world?</h3>
+
+                    <label><input type="radio" name="q8" value="African Elephant"> African Elephant</label>
+                    <label><input type="radio" name="q8" value="Blue Whale"> Blue Whale</label>
+                    <label><input type="radio" name="q8" value="Giraffe"> Giraffe</label>
+                    <label><input type="radio" name="q8" value="Hippopotamus"> Hippopotamus</label>
+                </section>
+
+
+                <!-- Question 9 -->
+                <section class="question-card">
+                    <h3><span>09</span> The Great Wall is located in which country?</h3>
+
+                    <label><input type="radio" name="q9" value="Japan"> Japan</label>
+                    <label><input type="radio" name="q9" value="India"> India</label>
+                    <label><input type="radio" name="q9" value="China"> China</label>
+                    <label><input type="radio" name="q9" value="South Korea"> South Korea</label>
+                </section>
+
+
+                <!-- Question 10 -->
+                <section class="question-card">
+                    <h3><span>10</span> What is the hardest natural substance?</h3>
+
+                    <label><input type="radio" name="q10" value="Iron"> Iron</label>
+                    <label><input type="radio" name="q10" value="Diamond"> Diamond</label>
+                    <label><input type="radio" name="q10" value="Quartz"> Quartz</label>
+                    <label><input type="radio" name="q10" value="Granite"> Granite</label>
+                </section>
+
+
+                <!-- Question 11 -->
+                <section class="question-card">
+                    <h3><span>11</span> Which organ pumps blood throughout the human body?</h3>
+
+                    <label><input type="radio" name="q11" value="Brain"> Brain</label>
+                    <label><input type="radio" name="q11" value="Lungs"> Lungs</label>
+                    <label><input type="radio" name="q11" value="Heart"> Heart</label>
+                    <label><input type="radio" name="q11" value="Liver"> Liver</label>
+                </section>
+
+
+                <!-- Question 12 -->
+                <section class="question-card">
+                    <h3><span>12</span> What is the smallest prime number?</h3>
+
+                    <label><input type="radio" name="q12" value="0"> 0</label>
+                    <label><input type="radio" name="q12" value="1"> 1</label>
+                    <label><input type="radio" name="q12" value="2"> 2</label>
+                    <label><input type="radio" name="q12" value="3"> 3</label>
+                </section>
+
+
+                <!-- Question 13 -->
+                <section class="question-card">
+                    <h3><span>13</span> Which language is used to structure web pages?</h3>
+
+                    <label><input type="radio" name="q13" value="CSS"> CSS</label>
+                    <label><input type="radio" name="q13" value="HTML"> HTML</label>
+                    <label><input type="radio" name="q13" value="JavaScript"> JavaScript</label>
+                    <label><input type="radio" name="q13" value="Python"> Python</label>
+                </section>
+
+
+                <!-- Question 14 -->
+                <section class="question-card">
+                    <h3><span>14</span> Istanbul is a major city in which country?</h3>
+
+                    <label><input type="radio" name="q14" value="Greece"> Greece</label>
+                    <label><input type="radio" name="q14" value="Egypt"> Egypt</label>
+                    <label><input type="radio" name="q14" value="Turkey"> Turkey</label>
+                    <label><input type="radio" name="q14" value="Italy"> Italy</label>
+                </section>
+
+
+                <!-- Question 15 -->
+                <section class="question-card">
+                    <h3><span>15</span> What is the chemical formula of water?</h3>
+
+                    <label><input type="radio" name="q15" value="CO2"> CO2</label>
+                    <label><input type="radio" name="q15" value="O2"> O2</label>
+                    <label><input type="radio" name="q15" value="H2O"> H2O</label>
+                    <label><input type="radio" name="q15" value="NaCl"> NaCl</label>
+                </section>
+
+
+                <!-- Question 16 -->
+                <section class="question-card">
+                    <h3><span>16</span> Who painted the famous Mona Lisa?</h3>
+
+                    <label><input type="radio" name="q16" value="Pablo Picasso"> Pablo Picasso</label>
+                    <label><input type="radio" name="q16" value="Vincent van Gogh"> Vincent van Gogh</label>
+                    <label><input type="radio" name="q16" value="Leonardo da Vinci"> Leonardo da Vinci</label>
+                    <label><input type="radio" name="q16" value="Michelangelo"> Michelangelo</label>
+                </section>
+
+
+                <!-- Question 17 -->
+                <section class="question-card">
+                    <h3><span>17</span> Which is the fastest land animal?</h3>
+
+                    <label><input type="radio" name="q17" value="Lion"> Lion</label>
+                    <label><input type="radio" name="q17" value="Cheetah"> Cheetah</label>
+                    <label><input type="radio" name="q17" value="Horse"> Horse</label>
+                    <label><input type="radio" name="q17" value="Leopard"> Leopard</label>
+                </section>
+
+
+                <!-- Question 18 -->
+                <section class="question-card">
+                    <h3><span>18</span> What does CPU stand for?</h3>
+
+                    <label><input type="radio" name="q18" value="Central Processing Unit"> Central Processing Unit</label>
+                    <label><input type="radio" name="q18" value="Computer Power Unit"> Computer Power Unit</label>
+                    <label><input type="radio" name="q18" value="Central Program Utility"> Central Program Utility</label>
+                    <label><input type="radio" name="q18" value="Control Processing User"> Control Processing User</label>
+                </section>
+
+
+                <!-- Question 19 -->
+                <section class="question-card">
+                    <h3><span>19</span> What is the largest hot desert in the world?</h3>
+
+                    <label><input type="radio" name="q19" value="Gobi"> Gobi</label>
+                    <label><input type="radio" name="q19" value="Sahara Desert"> Sahara Desert</label>
+                    <label><input type="radio" name="q19" value="Arabian"> Arabian</label>
+                    <label><input type="radio" name="q19" value="Kalahari"> Kalahari</label>
+                </section>
+
+
+                <!-- Question 20 -->
+                <section class="question-card">
+                    <h3><span>20</span> In which year did Bangladesh gain independence?</h3>
+
+                    <label><input type="radio" name="q20" value="1947"> 1947</label>
+                    <label><input type="radio" name="q20" value="1952"> 1952</label>
+                    <label><input type="radio" name="q20" value="1971"> 1971</label>
+                    <label><input type="radio" name="q20" value="1975"> 1975</label>
+                </section>
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="primary-btn submit-btn">
+                    Submit Quiz →
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section class="result-section" id="result">
+
+            <div class="result-icon">🏆</div>
+
+            <span class="small-label">QUIZ COMPLETED</span>
+
+            <h2>Your Final Score</h2>
+
+            <div class="score-circle">
+                <strong id="final-score">0/20</strong>
+                <span>POINTS</span>
+            </div>
+
+            <h3 id="result-message">Great job!</h3>
+
+            <div class="result-details" id="result-details"></div>
+
+            <button type="button" id="restart-btn" class="primary-btn">
+                Try Again ↻
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed with focus. Built for knowledge.</p>
+            <span>© 2026 QuizNova</span>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
